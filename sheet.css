@@ -1,0 +1,270 @@
+h1,h3,h2,h4,h5,h6{
+    font-family: "Nerko One", cursive;
+}
+body {
+    --background-light: #fff;
+    --background-dark: #22262a; 
+    --light-text: black;
+    --dark-text: #fff;
+    --dark-cardText: #eee;
+    --light-cardText: gray;
+    --light-card: #fff;
+    --dark-card: #343a40;
+    --grey-color: gray;
+}
+body.dark {
+    --background-light: #212529;
+    --background-dark: #fff;
+    --light-text: #fff;
+    --dark-text: black;
+    --dark-cardText: gray;
+    --light-cardText: #eee;
+    --light-card: #343a40;
+    --dark-card: #fff;
+}
+body a {
+    cursor: pointer;
+}
+body{
+    font-family: "Comfortaa" ,cursive;
+    transition: all 0.2s ease-in;
+    color: var(--light-text);
+    background-color: var(--background-light);
+}
+#signUp , #logIn{
+    display: flex; padding: 0px;
+    color: var(--light-text);
+    box-shadow: -5px 2px 54px -9px var(--grey-color);
+}
+form{
+    position: relative;
+}
+#signUp form i {
+cursor: pointer; position: absolute; bottom: 40px; right: 0px;
+}
+#logIn form i {
+    cursor: pointer;
+    position: absolute; bottom: 65px; right: 25px;
+}
+.top-form{
+    display: flex; flex-direction: column; justify-content: center; text-align: center;
+    padding: 10px 10px 20px 10px ;
+}
+.top-form img {
+    width: 70px; float: center;  margin: auto;
+}
+#signUp form{
+    padding: 10px 60px;
+}
+#logIn , #signUp{
+    margin-top: 30px;
+}
+#logIn form{
+    padding: 70px 120px;
+}
+form .btn {
+    width: 100%; margin: 10px 0px;
+}
+form p{
+    text-align: center; padding: 10px 3px; font-weight: 900;
+}
+#signUp .names {
+    display: flex; justify-content: space-between;
+}
+#signUp .names div{
+    margin: 5px;
+}
+input.form-control {
+    border-color: #6c757d;
+  }
+input.form-control:focus {
+    box-shadow: 0 0 0 0.1rem  #22262a ;
+  }  
+form p span {
+    cursor: pointer; text-decoration: underline;
+}
+@media (max-width: 576px){
+    .imgContainer{
+         display: none;
+    }
+    #logIn form{
+        padding: 20px 0px 20px 50px;
+    }
+    #logIn{
+        margin-top: 120px;
+    }
+    #signUp{
+        margin : 90px 0px;
+    }
+    #signUp form{
+        padding: 0px 10px;
+    }
+    form p {
+        text-align: center;
+    }
+    #signUp form i {
+    bottom: 25px; right: 10px;
+    }
+    #logIn form i {
+     bottom: 47px; right:-22px;
+}
+}
+#bar-icon{
+    color: var(--light-text);
+}
+.nav-link {
+    transition: all 0.5ms ease-in-out; padding: 0px 10px; color: var(--light-text);
+    font-size: 14px; font-style: normal; letter-spacing: 1px; font-weight: bolder;
+}
+#logOut a{
+    letter-spacing: 1px; font-weight: bolder; padding-left: 150px; transition: all 0.5ms ease-in-out;
+    color: var(--light-text); text-decoration: underline;
+}
+.nav-link:hover , #logOut:hover{
+    color: #09c;
+}
+.container-fluid {
+    display: flex; justify-content: flex-start;
+}
+.container-fluid  h3 {
+    padding-top: 5px;
+}
+#navbarSupportedContent ul{
+      margin: auto; 
+}
+#topBar nav , .container-fluid {
+    display: flex;  justify-content: center;  text-align: center; margin: 0px;
+    padding-bottom: 0px; padding-top: 0px;
+}
+#gamesPage {
+    display: grid; grid-template-columns: repeat(4,1fr);
+    margin: 10px 80px;
+}
+.card-body div {
+    display: flex; justify-content: space-between;
+}
+.card-body p {
+    text-align: center; padding: 5px 0px; font-size: 15px; color: var(--light-cardText);
+}
+.card-body button{
+    height: 33px; border-radius: 7px;
+}
+#cardGame  {
+    padding: 5px 7px;  margin: 10px 10px;
+    border:solid 1px var(--grey-color); border-radius: 5px;
+    width: 16rem; height: 26rem;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+.card{
+    height: 25rem; width: 15rem;
+    background-color: var(--light-card);
+
+}
+#cardGame:hover {
+    transform: scale(1.03);
+}
+#cardGame  .bottom{
+    position: absolute; bottom: 20px;
+    border-top: solid 1px var(--grey-color);
+}
+#cardGame .bottom h6 {
+    margin: 0px 20px; padding-top: 12px ;
+}
+.headLine{
+    padding: 5px 30px; font-size: 30px;
+}
+.top{
+    display: flex; justify-content: space-between;
+}
+.top #icon{
+    text-align: right; padding: 11px 70px 0px 0px;
+}
+#icon{
+    cursor: pointer;
+}
+@media (max-width: 576px){
+    #topBar  a , #logOut {
+         text-align: left;
+         padding: 7px 3px;
+    }
+    #gamesPage {
+        display: grid; grid-template-columns: repeat(1,1fr);
+        margin: 5px 27px;
+    }
+    #cardGame {
+        margin: 10px 10px;
+    }
+    .headLine{
+        padding: 5px 10px; font-size: 20px;
+    }
+    .top #icon{
+        text-align: right; padding: 8px 25px 0px 0px;
+    }
+}
+#displayGame{
+    display: flex; justify-content: space-between;
+    box-shadow: -5px 2px 54px -9px black; color: #fff;
+    background-position: center; background-repeat: no-repeat; background-size: cover;
+    width: 100%; height: max-content;
+}
+.gameImges div{
+    display: flex; 
+}
+.gameImges div img {
+    margin: 5px 5px;
+}
+.gameImges , .extraInfo {
+    padding: 20px 0px;
+}
+.extraInfo div {
+    display: grid; grid-template-columns: repeat(2,1fr);
+}
+.extraInfo div span{
+   font-size: 20px; font-weight: bolder;
+}
+.extraInfo div  p {
+     font-weight: 260;
+}
+.gameInfo {
+    padding:20px 40px; margin: 0px 50px;
+}
+#displayGame #container{
+    margin: 20px 0px;
+}
+#displayGame #container div{
+    margin: 10px 0px;
+}
+#playBtn{
+    width: 230px; padding: 7px 10px;
+}
+#freeBtn{
+    width: 65px;padding: 7px 10px;
+}
+@media (max-width: 576px){
+    #displayGame{
+        display: flex; justify-content: space-between; flex-direction: column;
+    }
+    .gameImges div{
+        display: flex;  flex-direction: column;
+    }
+    .gameImges div img {
+        margin: 10px 18px;
+    }
+    .gameImges , .extraInfo {
+        padding: 10px 20px;
+    }
+    .extraInfo div {
+        display: grid; grid-template-columns: repeat(2,1fr);
+    }
+    .gameInfo {
+        padding:20px 10px; margin: 10px 0px;
+    }
+    #displayGame #container{
+        margin: 10px 13px;
+    }
+    #displayGame #container div{
+        margin: 10px 0px;
+    }
+}
+
