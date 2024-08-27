@@ -88,16 +88,16 @@ form p span {
          display: none;
     }
     #logIn form{
-        padding: 20px 0px 20px 50px;
+         margin: auto; padding: 0px;
     }
     #logIn{
         margin-top: 120px;
     }
     #signUp{
-        margin : 90px 0px;
+        margin: auto; margin-top: 35%;
     }
     #signUp form{
-        padding: 0px 10px;
+        padding: 0px 10px; margin: auto;
     }
     form p {
         text-align: center;
@@ -183,17 +183,17 @@ form p span {
 #icon{
     cursor: pointer;
 }
-@media (max-width: 576px){
+@media (max-width: 600px){
     #topBar  a , #logOut {
          text-align: left;
          padding: 7px 3px;
     }
     #gamesPage {
         display: grid; grid-template-columns: repeat(1,1fr);
-        margin: 5px 27px;
+        margin: auto; row-gap: 20px;
     }
     #cardGame {
-        margin: 10px 10px;
+        margin: auto;
     }
     .headLine{
         padding: 5px 10px; font-size: 20px;
@@ -212,7 +212,7 @@ form p span {
     display: flex; 
 }
 .gameImges div img {
-    margin: 5px 5px;
+    margin: auto;
 }
 .gameImges , .extraInfo {
     padding: 20px 0px;
@@ -224,10 +224,10 @@ form p span {
    font-size: 20px; font-weight: bolder;
 }
 .extraInfo div  p {
-     font-weight: 260;
+    font-weight: 260;
 }
 .gameInfo {
-    padding:20px 40px; margin: 0px 50px;
+    padding: 0%; margin: auto; padding: 20px 50px;
 }
 #displayGame #container{
     margin: 20px 0px;
@@ -241,15 +241,15 @@ form p span {
 #freeBtn{
     width: 65px;padding: 7px 10px;
 }
-@media (max-width: 576px){
+@media (max-width: 600px){
     #displayGame{
         display: flex; justify-content: space-between; flex-direction: column;
     }
     .gameImges div{
-        display: flex;  flex-direction: column;
+        display: flex;  flex-direction: column; margin: auto;
     }
     .gameImges div img {
-        margin: 10px 18px;
+        margin: auto; margin-top: 5px; margin-bottom: 5px;
     }
     .gameImges , .extraInfo {
         padding: 10px 20px;
@@ -261,10 +261,90 @@ form p span {
         padding:20px 10px; margin: 10px 0px;
     }
     #displayGame #container{
-        margin: 10px 13px;
+        margin: 0px;
+    }
+    #displayGame #container img {
+        width: 100%;
     }
     #displayGame #container div{
         margin: 10px 0px;
+    }
+    #playBtn{
+        width: 265px; padding: 7px 10px;
+    }
+}
+/* Tablet responsiveness */
+@media (min-width: 600px) and (max-width: 900px) {
+    /* Adjustments for SignUp and LogIn Forms */
+    #logIn form {
+        padding: 50px 80px;
+    }
+    #signUp form {
+        padding: 20px 40px;
+    }
+    #logIn {
+        margin-top: 80px;
+    }
+    #signUp {
+        margin: auto; margin-top: 50px;
+    }
+    
+    /* Navigation and Header */
+    #topBar a, #logOut {
+        padding: 10px 5px;
+    }
+    .container-fluid h3 {
+        font-size: 24px;
+    }
+
+    /* Games Page */
+    #gamesPage {
+        display: grid; grid-template-columns: repeat(2, 1fr);
+        margin: 20px 40px;
+        column-gap: 20px;
+    }
+    #cardGame {
+        margin: 10px auto;
+        width: 18rem; height: 28rem;
+    }
+    .card {
+        height: 27rem; width: 17rem;
+    }
+    .headLine {
+        font-size: 25px;
+    }
+    .top #icon {
+        padding-right: 40px;
+    }
+
+    /* Display Game Section */
+    #displayGame {
+        flex-direction: column;
+        padding: 20px 40px;
+    }
+    .gameInfo {
+        margin: 20px auto;
+        padding: 20px 30px;
+    }
+    .extraInfo div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #displayGame #container img {
+        width: 100%;
+    }
+    #playBtn {
+        width: 230px;
+    }
+    #freeBtn {
+        width: 80px;
+    }
+
+    /* Adjustments for Text and Other Elements */
+    .extraInfo div span {
+        font-size: 18px;
+    }
+    .extraInfo div p {
+        font-size: 16px;
     }
 }
 
